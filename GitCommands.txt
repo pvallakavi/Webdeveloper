@@ -1,4 +1,4 @@
 git commit -m "third commit"
-git add.
+git add .
 
 git push -u origin master
