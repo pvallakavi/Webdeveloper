@@ -7,10 +7,26 @@ This is Hello world in Java script</title>
 </head>
 <body>
 <p id = "para1"> Hello world </p>
+<p id = "emptypara"> </p>
+<button id = "myButton"> Click here </button>
+<p id = "moretext"> This is just some more text that can be sytle changed using javascript </p>
+<button id = "changeStyle"> Change Style </button>
+
 
 <script type ="text/javascript">
 	//alert("hello world alert"); //means comments in javascript
-	document.getElementById("para1").innerHTML = "Hello Pavan";
+	
+	document.getElementById("myButton").onclick = function() {
+		document.getElementById("para1").innerHTML = "Hellp Pavan";
+		document.getElementById("emptypara").innerHTML = document.getElementById("para1").innerHTML + " Java script is cool";
+	}
+	
+	document.getElementById("changeStyle").onclick = function() {
+		document.getElementById("moretext").style.color = "red";
+		document.getElementById("moretext").style.fontSize = "25px";
+		document.getElementById("moretext").style.display = false;
+	}
+	
 </script>
 
 </body>
