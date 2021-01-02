@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<style>
+/* Solid border */
+.solid {
+  border-top: 3px solid Red;
+}
+
+</style>
+
+</head>
+
+<body>
+<h2> This is For loops </h2>
+<div class = "solid" id = "forloops"> </div>
+<h2> This is While loops </h2>
+<div class = "solid" id = "whileloops"> This is While loops </div>
+
+<script type = "text/javascript">
+var tweets = ["Hi","Good morning", "Evening", "Night"];
+var tweetString = ""
+var whileTweets = ["Bird","Singing","Morning","Night"];
+var whileTweetString = "";
+
+
+for (var i=0;i<tweets.length;i++){
+    //console.log(tweets(i));
+	tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+	console.log(tweetString);
+}
+
+var j=0;
+
+while(j<whileTweets.length){
+whileTweetString = whileTweetString + "<p>" + whileTweets[j] + "</p>";
+j++;
+}
+
+document.getElementById("forloops").innerHTML = tweetString;
+document.getElementById("whileloops").innerHTML = whileTweetString;
+
+</script>
+
+
+</body>
+
+</html>

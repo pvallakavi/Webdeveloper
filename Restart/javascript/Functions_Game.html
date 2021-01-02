@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+		<!-- <button onclick="avgFunction()">Press me</button> -->
+		
+		<button onclick="avgFunction()">Press me to try the Average function </button>
+		
+        <p id="avgDemo"></p>
+		
+        <script>
+         function avgFunction()
+         {
+              //document.getElementById("demo").innerHTML=x;
+			  var i,j,avg = 0;
+			  var sum = 0;
+			  var userPrompt = 0;
+			  var allNum = [];
+			  //alert(numbersX);			
+			
+            var numbersX=prompt("Choose upto 5 numbers");
+            if (numbersX!=null && numbersX <6)
+            {
+			  
+			  for(i=0;i<numbersX;i++){
+				var userPrompt=prompt("Enter the number here");
+				allNum[i]=userPrompt;
+				//alert(userPrompt);
+			  }
+			  
+			  var textString = "";
+			  
+			  for (j=0;j<numbersX;j++){
+				textString = textString + "<p>" + allNum[j] + "</p>";
+				sum = sum + parseInt(allNum[j]);
+			  }
+			  avg = sum/numbersX;
+			  document.getElementById("avgDemo").innerHTML= "Average of the numbers" + textString + " is " + "<p>"+ avg + "</p>";
+              
+            } else {
+			alert("you have choosen no numbers are too many numbers");
+			}
+		}
+        </script>
+    </body>
+</html>
