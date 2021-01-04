@@ -1,0 +1,17 @@
+    body {
+        color:rgb(243, 16, 141);
+        font-size:larger;
+    }
+
+    .box1 {
+        background-color:red;
+        width: 150px;
+        height: 200px;
+    }
+
+    .nested-box1 {
+        background-color: greenyellow;
+        width:50px;
+        height:50px;
+        border-left: 25px;
+    }
