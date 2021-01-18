@@ -1,87 +1,193 @@
 html{
-    height: 100%;
-    width:100%;
+  /* height: 100%;
+  width:100%; */
 }
 
 body {
-    background-color: rgb(41, 42, 48);
-    background-image:url(images/background-food.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: center;
+  background-color: rgb(41, 42, 48);
+  background-image:url(images/background-food.jpg);
+  background-size:cover;
+  /* background-repeat:no-repeat; */
+  background-position: center;
+  /* overflow: scroll; */
 }
 
 .containerPavan {
-    margin-left:auto;
-    margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+.img-banner {
+  display:none;
 }
 
 img {
-    /* border: 10px solid #ddd; */
-    border-radius: 4px;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    width: 180px;
-  }
+  /* border: 10px solid #ddd; */
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  width: 100px;
+}
 
 header{
-    /* background-color: blue; */
-    height:110px;
-    text-align: center;
+  /* background-color: blue; */
+  height:100%;
+  text-align: center;
 }
 
 main{
-/* background-color: rgb(199, 148, 21); */
-height:400px;
-text-align: center;
-padding-top: 10px;
-padding-left: 240px; /* padding is inside of the box, Border is for outside the Box (element) */
-padding-right:240px;
+  /* background-color: rgb(199, 148, 21); */
+  /* height:400px; */
+  min-height: 100vh;
+  margin-bottom:-40px; /*this is height of footer; */
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 240px; /* padding is inside of the box, Border is for outside the Box (element) */
+  padding-right:240px;
+  width:100%;
+  /* overflow: visible; */
 }
 
-
 h1 {
-    font-size:40px;
-    color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:40px;
+  color:white;
+  padding: 30px 30px 20px;
+  line-height: 44px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-    font-size:25px;
-    color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:20px;
+  color:white;
+  padding: 0px 30px 30px;
+  line-height: 24px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a{
-    color:white;
+  color:white;
 }
+
+/*nav a {
+float:left;
+color: #f2f2f2;
+text-align: center;
+padding:14px 16px 14px 80px;
+text-decoration: none;
+font-size: 17px;
+border-bottom: 3px solid transparent;
+*/
 
 nav{
-    background-color: rgba(0, 0, 0, 0.39);
-    height:40px;
-    max-width: 300%;
-    text-align:center;
+  background-color: rgba(0, 0, 0, 0.39);
+  height:40px;
+  max-width: 300%;
+  text-align:center;
 }
 
-nav a {
+ul{
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  list-style: none;
+  /* display:inline-block; */
   float:left;
-  /* display: inline-block; */
-  color: #f2f2f2;
-  text-align: center;
-  padding:14px 16px 14px 80px;
+  line-height: 40px; /* same as NAV height */
+}
+
+ul li a {
   text-decoration: none;
-  font-size: 17px;
-  border-bottom: 3px solid transparent;
+  font-size:14px;
+  color:white;
+  padding:0 65px;
+  display:block; /* above or top also you can click now */
+}
+
+ul li a:hover {
+  color:red;
+}
+
+.mymaps {
+  padding-top: 10px;
+  padding-left:50px;
+  text-align: center;
+  width:100%;
+  /* margin-top: auto; */
+}
+
+.pushfooterdowntest {
+  height:40px;
 }
 
 footer {
-    background-color:rgba(68, 67, 67, 0.384);
-    height:30px;
-    padding:25px 25px 25px 25px;
+background-color: rgb(212, 74, 74);
+color: white;
+  height:40px;
 }
 
 footer p {
-    color:white;
-    font-size:20px;
-    text-align:center;
+  color:white;
+  font-size: 15px;
+  line-height:40px;
+  text-align:center;
 }
+
+@media only screen and (min-width: 786px){
+  .img-banner {
+      display:block;
+      width:100%;
+      padding-bottom:30px;
+
+  }   
+
+  .containerPavan {
+      width:600px;
+      margin: 0 auto;
+  }
+
+  h1 {
+      padding: 20px 0px 0px;
+  }
+
+  p {
+      padding: 20px 0px 0px;
+  }
+
+  .mymaps {
+      padding-top: 30px;
+      padding-left:50px;
+      text-align: center;
+      width:100%;
+      /* margin-top: auto; */
+  }
+}
+
+@media only screen and (min-width: 1000px){{
+.containerpavan {
+   width:1000px;
+}
+
+main {
+   width: 50%;
+   float:right;
+}
+
+.img-banner {
+   width:50px;
+   padding-top:0px;
+   float:left;
+}
+
+h1 {
+   padding: 20px 0px 0px 30px;
+}
+
+p{
+   padding: 20px 0px 0px 30px;
+}
+}
+
+

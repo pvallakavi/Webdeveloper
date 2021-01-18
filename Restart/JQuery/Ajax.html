@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src = "jquery.min.js"></script>
+    <title>Ajax</title>
+</head>
+<body>
+
+    <p id ="para1"></p>
+    <script type = "text/javascript">
+
+        /* $.get("testFile.txt", function(fileData){
+             alert(fileData);
+        }); */  //this is not using AJAX - just plain jquery getting the contents of testFile.txt and calling a function & passing it to a variable fileData
+
+        $.ajax("testFil!e.txt").done(function(fileData){
+            //alert(fileData); pass the contents of variable fileData to the paragraph
+            $("#para1").html(fileData);
+        }).fail(function() {
+            $("#para1").html("File cannot be retreived");
+        });
+    
+    </script>
+    
+</body>
+</html>
