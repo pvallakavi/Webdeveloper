@@ -8,6 +8,7 @@ The <body> element defines the document's body, and is a container for all the v
     The visible part of the HTML document is between <body> and </body>.
 The <h1> element defines a large heading
 The <p> element defines a paragraph
+<div> -- division tag ..its like section
 The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: <a href="https://www.w3schools.com">Visit W3Schools</a>
 The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed: <img src="img_girl.jpg" width="500" height="600">
     The alt Attribute:    The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader
@@ -22,7 +23,6 @@ The <br> tag defines a line break, and is an empty element without a closing tag
 
 Headings Are Important
 Search engines use the headings to index the structure and content of your web pages.
-
 Users often skim a page by its headings. It is important to use headings to show the document structure.
 
 P tag puts everything one line
@@ -37,3 +37,11 @@ Use color for text colors
 Use font-family for text fonts
 Use font-size for text sizes
 Use text-align for text alignmen
+
+unordered lists
+
+<li>
+
+pavan
+
+</li>
